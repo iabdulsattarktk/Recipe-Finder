@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER: Page title aur logo ===== -->
+    <header>
+        <h1>🍽️ Recipe Finder</h1>
+        <p>Find delicious recipes by ingredient or category</p>
+    </header>
+
+    <!-- ===== NAV: Navigation menu ===== -->
+    <nav>
+        <a href="#search">Home</a>
+        <a href="#results">Recipes</a>
+        <a href="#favorites">Favorites</a>
+    </nav>
+
+    <!-- ===== SECTION 1: Search Panel ===== -->
+    <section id="search">
+        <h2>🔍 Search Recipes</h2>
+
+        <!-- Text input: ingredient ya category likho -->
+        <input type="text" id="searchInput" placeholder="e.g. egg, chicken, dessert...">
+        <button id="searchBtn">Search</button>
+
+        <!-- Category checkboxes -->
+        <div id="categoryFilters">
+            <label><input type="checkbox" value="Breakfast"> Breakfast</label>
+            <label><input type="checkbox" value="Lunch"> Lunch</label>
+            <label><input type="checkbox" value="Dinner"> Dinner</label>
+            <label><input type="checkbox" value="Dessert"> Dessert</label>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: Recipe Results ===== -->
+    <section id="results">
+        <h2>📋 Recipe Results</h2>
+        <!-- JS yahan dynamically cards insert karega -->
+        <div id="recipeContainer"></div>
+    </section>
+
+    <!-- ===== SECTION 3: Favorites ===== -->
+    <section id="favorites">
+        <h2>❤️ My Favorites</h2>
+        <!-- JS yahan favorites insert karega -->
+        <ul id="favoritesList"></ul>
+    </section>
+
+    <!-- ===== FOOTER: Copyright info ===== -->
+    <footer>
+        <p>© 2025 Recipe Finder | Contact: info@recipefinder.com</p>
+    </footer>
+
+    <!-- script.js ko connect karo — body ke end mein hona zaroori hai -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
